@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Control de Fichajes</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Web de control de fichaje para empleados. Registra la entrada y salida de tu jornada laboral de forma rápida y sencilla.">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="#home">Logo</a>
+    <a href="#menu-item-1">Fichar</a>
+    <a href="#menu-item-2">Ver Fichajes</a>
+    <a href="#menu-item-3">Fichaje Manual</a>
+    <a href="javascript:void(0);" id="menu-toggle" onclick="togglemenu()">
+      <div class="menu-toggle__bar1"></div>
+      <div class="menu-toggle__bar2"></div>
+      <div class="menu-toggle__bar3"></div>
+    </a>
+  </nav>
+  <style>
+  /* For best practice, move CSS below to an external CSS file. */
+  .nav {
+    overflow: hidden; }
+  .nav a {
+    float: left;
+    margin: 10px;
+    display: block; }
+  .nav #menu-toggle {
+    display: none; }
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {
+      display: none; }
+    .nav a#menu-toggle {
+      float: right;
+      display: block; } }
+  @media screen and (max-width: 600px) {
+    .nav.nav--open {
+      position: relative; }
+    .nav.nav--open #menu-toggle {
+      position: absolute;
+      right: 0;
+      top: 0; }
+    .nav.nav--open a {
+      float: none;
+      display: block;
+      text-align: left; } }
+  .menu-toggle__bar1, .menu-toggle__bar2, .menu-toggle__bar3 {
+    width: 21px;
+    height: 3px;
+    background-color: #000000;
+    margin: 4px 0;
+    transition: 0.3s; }
+  .menu-toggle--open .menu-toggle__bar1 {
+    transform: translate(0, 7px) rotate(-45deg); }
+  .menu-toggle--open .menu-toggle__bar2 {
+    opacity: 0; }
+  .menu-toggle--open .menu-toggle__bar3 {
+    transform: translate(0, -7px) rotate(45deg); }
+  </style>
+  <h1>Alta Usuario</h1>
+  <form action="#">
+    <label for="firstName">Nombre</label><br>
+    <input type="text" name="firstName" value="Ricardo"><br>
+    <label for="lastName">Apellido</label><br>
+    <input type="text" name="lastName" value="Ruiz"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" value="ricardo@ricarma.com"><br>
+    <label for="phone">Móvil:</label><br>
+    <input type="tel" name="phone" value="555-555-5555"><br>
+    <label for="company">Companía:</label><br>
+    <input type="text" name="company" value="Ricarma S.A"><br>
+    <label for="departamento">Departamentos</label><br>
+    <select name="departamento">
+      <option value="" selected disabled hidden>-- Seleccione Departamento --</option>
+      <option value="departamento 1">Contabilidad</option>
+      <option value="departamento 2">Administración</option>
+      <option value="departamento 3">Oficina Técnica</option>
+    </select><br>
+    <label for="message">Message:</label><br>
+    <textarea name="message"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+  <style>
+    .splide__slide img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+  <section id="image-carousel" class="splide" aria-label="Images">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="https://via.placeholder.com/800x600/000000" alt="">
+          <div>
+            Firma de empresa.
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img src="https://via.placeholder.com/800x600/333333" alt="">
+          <div>
+            Description 02
+          </div>
+        </li>
+        <li class="splide__slide">
+          <img src="https://via.placeholder.com/800x600/666666" alt="">
+          <div>
+            Description 03
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <small>© <script>document.write(new Date().getFullYear())</script> RICARMA S.A. All Rights Reserved.</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <script>
+    new Splide( '.splide' ).mount();
+  </script>
+  <script>
+  function togglemenu() {
+    var x = document.getElementById("nav");
+    if (x.className === "nav") {
+      x.className += " nav--open";
+    } else {
+      x.className = "nav";
+    }
+    var element = document.getElementById("menu-toggle");
+    element.classList.toggle("menu-toggle--open");
+  }
+  </script>
+</body>
+</html>
