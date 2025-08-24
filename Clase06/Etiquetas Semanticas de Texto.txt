@@ -1,0 +1,82 @@
+Etiquetas Semánticas de Texto Comunes
+
+<address> 
+
+Se usa para direcciones
+
+<em> (Emphasis):
+
+Indica énfasis tonal o importancia. El navegador suele mostrarlo en cursiva. Es para cuando quieres que una palabra o frase se lea con un tono diferente, cambiando el significado o destacando algo.
+
+Ejemplo: El HTML es un lenguaje de <em>marcado</em>, no de programación.
+
+<strong> (Strong Importance):
+
+Indica que el texto tiene gran importancia o urgencia. El navegador suele mostrarlo en negrita. Es para cuando el contenido es críticamente importante.
+
+Ejemplo: <strong>¡Atención!</strong> La fecha límite es mañana.
+
+<cite> (Citation):
+
+Utilizado para el título de una obra creativa (un libro, una canción, una película, un artículo, etc.).
+
+Ejemplo: Mi libro favorito es <cite>Cien años de soledad</cite>.
+
+<code> (Code):
+
+Indica una porción de código de programación (o datos de máquina). Los navegadores suelen mostrarlo con una fuente monoespaciada.
+
+Ejemplo: Para declarar una variable en JavaScript, usa <pre><code>let miVariable = 10;</code></pre>
+
+<small> (Small Print):
+
+Representa comentarios secundarios o texto que tiene menos importancia, como avisos legales, derechos de autor o advertencias. A menudo se muestra en una fuente más pequeña.
+
+Ejemplo: <small>Todos los derechos reservados. Sujeto a cambios sin previo aviso.</small>
+
+<mark> (Highlight/Marked Text):
+
+Representa texto que está resaltado o marcado por su relevancia en un contexto particular, como un resultado de búsqueda.
+
+Ejemplo: Encontré la palabra <mark>semántica</mark> en el texto.
+
+<abbr> (Abbreviation):
+
+Define una abreviatura o un acrónimo. Puedes usar el atributo title para dar la expansión completa o la descripción de la abreviatura.
+
+Ejemplo: <abbr title="HyperText Markup Language">HTML</abbr> es el lenguaje de la web.
+
+<dfn> (Defining Instance):
+
+Se utiliza para resaltar la instancia definitoria de un término dentro del contenido de un párrafo, oración o lista.
+
+Ejemplo: <dfn>HTTP</dfn> es un protocolo de transferencia de hipertexto.
+
+<time> (Time):
+
+Representa una fecha y/o hora. El atributo datetime permite especificar la fecha/hora en un formato legible por máquinas.
+
+Ejemplo: La reunión es el <time datetime="2025-10-26">26 de octubre</time> a las <time datetime="14:00">14:00</time>.
+
+<var> (Variable):
+
+Indica el nombre de una variable en un contexto matemático o de programación.
+
+Ejemplo: La ecuación es <var>x</var> + <var>y</var> = <var>z</var>.
+
+<samp> (Sample Output):
+
+Utilizado para representar la salida de un programa o sistema (texto de muestra).
+
+Ejemplo: El programa mostró: <samp>Error 404: Page Not Found</samp>.
+
+Importancia de las Etiquetas Semánticas de Texto
+Accesibilidad: Mejoran la experiencia para usuarios con discapacidades, especialmente aquellos que usan lectores de pantalla, ya que el software puede interpretar y vocalizar el contenido de manera más significativa (por ejemplo, pronunciando el énfasis).
+
+SEO: Aunque no son un factor principal, ayudan a los motores de búsqueda a entender el contexto y la importancia del contenido de tu página.
+
+Mantenibilidad del Código: Hacen que tu código sea más claro y fácil de entender para otros desarrolladores (y para ti mismo en el futuro).
+
+Separación de Contenido y Presentación: Fomentan que HTML se use para el significado (<em> para énfasis) y CSS para el estilo visual (cambiar la fuente a cursiva).
+
+Al usar estas etiquetas, estás construyendo una web más robusta y significativa.

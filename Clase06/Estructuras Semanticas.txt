@@ -1,0 +1,26 @@
+Las etiquetas semánticas de HTML5 son muy importantes porque le dan significado a las diferentes partes de tu página web, tanto para los navegadores 
+como para los desarrolladores y los lectores de pantalla. En lugar de usar solo <div> para todo, estas etiquetas describen el tipo de contenido que contienen.
+
+Etiquetas Semánticas Estructurales
+
+Estas etiquetas se usan para definir las principales regiones o secciones de una página.
+
+<header>: Representa la introducción de una sección o un documento. A menudo contiene el título, el logo, la navegación principal o un eslogan. Es como el "encabezado" o la "cabecera" de una página o de un bloque de contenido.
+
+<nav>: Define una sección de la página que contiene enlaces de navegación, es decir, un menú. Piensa en el menú principal del sitio, el índice o la tabla de contenidos.
+
+<main>: Contiene el contenido principal y único del documento. Es la información central que no se repite en otras páginas del sitio. Solo debe haber una etiqueta <main> por documento.
+
+<article>: Representa un contenido independiente y autónomo que podría distribuirse por sí mismo. Por ejemplo, una entrada de blog, un artículo de noticias, un comentario de usuario, o un tweet. Podría tener su propio <header> y <footer>.
+
+<section>: Es una sección genérica de contenido agrupado temáticamente. Piensa en capítulos, apartados o cualquier grupo de contenido relacionado. A menudo contendrá un título (<h1> a <h6>).
+
+Diferencia con <div>: Un <div> es un contenedor genérico sin significado, mientras que una <section> agrupa contenido con un tema específico.
+
+Diferencia con <article>: Un <article> es independiente y tiene sentido por sí mismo. Una <section> suele ser parte de un documento más grande.
+
+<aside>: Representa una sección de la página cuyo contenido está indirectamente relacionado con el contenido principal, o que podría considerarse aparte del contenido principal. 
+Típicamente se usa para barras laterales, bloques de anuncios, citas al margen o información biográfica.
+
+<footer>: Representa el pie de página de su sección o documento más cercano. A menudo contiene información sobre el autor, enlaces a documentos relacionados, información de 
+derechos de autor o enlaces de contacto.
